@@ -14,7 +14,10 @@ class EnergyCurrent extends Component {
 	}
 
 	updateEnergy(){
-		console.log("hello World");
+		const {currentData}= this.state;
+		this.setState({
+				currentData: 8
+		});
 	}
 
 	render() {
