@@ -4,12 +4,9 @@ const WebSocket = require('ws');
 const path = require('path');
 const EventHubReader = require('./scripts/event-hub-reader.js');
 
-//const iotHubConnectionString = "Endpoint=sb://iothub-ns-solarenerg-2272068-7b4cf3843a.servicebus.windows.net/;SharedAccessKeyName=iothubowner;SharedAccessKey=guYui2me2XK2u5ngaZwcl/ysZ1WlDqy2qwvgdioCAhY=;EntityPath=solarenergy";
 const iotHubConnectionString = "HostName=solarenergy.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=guYui2me2XK2u5ngaZwcl/ysZ1WlDqy2qwvgdioCAhY=;EntityPath=solarenergy";
-//const iotHubConnectionString = "HostName=solarenergy.azure-devices.net;DeviceId=team13wwc;SharedAccessKeyName=iothubowner;SharedAccessKey=4GgaGfQyRw6AZmucf9tuv5wZSdU9f6sCgAzpv70V4Pk=";
-const eventHubConsumerGroup = "wwcteam13"
-console.log("HILOOK ", iotHubConnectionString);
-console.log("HILOOK ", eventHubConsumerGroup);
+const eventHubConsumerGroup = "wwcteam13";
+
 // Redirect requests to the public subdirectory to the root
 const app = express();
 app.use(express.static(path.join(__dirname, 'public')));

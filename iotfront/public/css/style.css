@@ -3,8 +3,7 @@ body {
   padding: 50px;
   margin: 0;
   text-align: center;
- background-image: url("paper.gif");
- background-color: #cccccc;
+  background-color: #81A3A7;
 }
 
 .flexHeader {
@@ -15,18 +14,18 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: black;
 }
 
 body select {
   padding: 10px 70px 10px 13px;
-  max-width: 100%;
-  height: auto;
+  width: 70%;
+  height: 50%;
   border: 1px solid #e3e3e3;
   border-radius: 3px;
   background: url("https://i.ibb.co/b7xjLrB/selectbox-arrow.png") right center no-repeat;
-  background-color: #fff;
-  color: #444444;
+  background-color: #585A56;
+  color: black;
   line-height: 16px;
   appearance: none;
   /* this is must */ -webkit-appearance: none;
